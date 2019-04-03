@@ -1,0 +1,47 @@
+html, body
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+  font-family: Raleway
+
+  #form
+    padding: 20px
+    margin: 0 auto
+    text-align: center
+    background-color: #f1f1f1
+
+    h2
+      margin: 0
+      margin-bottom: 20px  
+    input
+      padding: 10px
+    
+    button
+      padding: 10px
+      background: none
+      border: none
+      background: #1855F2
+      color: #fff
+
+      &:hover
+        cursor: pointer
+        transform: scale(1.02)
+        transition: all 0.5s linear
+
+  
+#books
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  padding: 20px
+  text-align: center
+  justify-items: center
+  align-conent: center
+
+  .book_element
+    width: 80%
+
+    .desc
+      font-size: 15px
+
+    .highlight
+      font-weight: bold

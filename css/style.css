@@ -1,0 +1,63 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Raleway;
+}
+
+html #form, body #form {
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+html #form h2, body #form h2 {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+html #form input, body #form input {
+  padding: 10px;
+}
+
+html #form button, body #form button {
+  padding: 10px;
+  background: none;
+  border: none;
+  background: #1855F2;
+  color: #fff;
+}
+
+html #form button:hover, body #form button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+#books {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  padding: 20px;
+  text-align: center;
+  justify-items: center;
+  align-conent: center;
+}
+
+#books .book_element {
+  width: 80%;
+}
+
+#books .book_element .desc {
+  font-size: 15px;
+}
+
+#books .book_element .highlight {
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */
