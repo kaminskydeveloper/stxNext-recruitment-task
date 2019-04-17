@@ -1,4 +1,5 @@
-const API_KEY = 'put here your API key';
+const API_KEY = '';
+
 var books_container = document.querySelector('#books');
 
 var books = [];
@@ -15,6 +16,8 @@ const getBook = async e => {
     );
 
     const data = await api_call.json();
+
+    console.log(data);
 
     if (titleInput) {
       data.items.forEach((element, i) => {
@@ -57,6 +60,4 @@ const getBook = async e => {
   document.getElementById('title').value = '';
 };
 
-const form = document
-  .querySelector('#form')
-  .addEventListener('submit', getBook);
+document.querySelector('#form').addEventListener('submit', getBook);
